@@ -19,6 +19,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Users"
+        "404":
+          description: "失敗"
     post:
       summary: "ユーザ作成"
       tags:
@@ -34,6 +36,8 @@ paths:
       responses:
         "200":
           description: "成功"
+        "404":
+          description: "失敗"
   "/users/{id}":
     get:
       summary: "ユーザ取得"
