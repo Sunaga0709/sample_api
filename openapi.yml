@@ -54,6 +54,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/User"
+        "404":
+          description: "ユーザが見つからない"
     put:
       summary: "ユーザ更新"
       tags:
@@ -77,6 +79,8 @@ paths:
       responses:
         "200":
           description: "成功"
+        "404":
+          description: "ユーザが見つからない"
     delete:
       summary: "ユーザ削除"
       tags:
@@ -92,6 +96,8 @@ paths:
       responses:
         "200":
           description: "成功"
+        "404":
+          description: "ユーザが見つからない"
 components:
   schemas:
     User:
